@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Rocio",
+        "lastname": "Ponce",
+        "age": 38,
+        "email": "ro_ponce@yahoo.com",
+        "phone": "111111111"
+
+    },
+    {
+        "name": "Silvana",
+        "lastname": "Pereira",
+        "age": 48,
+        "email": "kuky@yahoo.com",
+        "phone": "222222222"
+
+    },
+    {
+        "name": "Franco",
+        "lastname": "Siciliano",
+        "age": 15,
+        "email": "fran@gmail.com",
+        "phone": "333333333"
+
+    },
+    {
+        "name": "Martin",
+        "lastname": "Ponce",
+        "age": 46,
+        "email": "mp_13@gmail.com",
+        "phone": "444444444"
+
+    },
+    {
+        "name": "Fernando",
+        "lastname": "Pereira",
+        "age": 39,
+        "email": "fp22@gmail.com",
+        "phone": "555555555"
+
+    }
+]

@@ -1,0 +1,22 @@
+<div>
+    <h2>Usuario elegido</h2>
+    <p>Nombre: {{name}}</p>
+    <p>Apellido: {{lastname}}</p>
+    <p>Edad: {{age}}</p>
+    <p>Mail: {{email}}</p>
+    <p>Telefono: {{phone}}</p>
+    <p>isAdmin?: {{isAdmin}}</p>
+
+    {{#if isAdmin }}
+        <h3>Comida</h3>
+        <ul>
+            {{#each food}}
+                <li>{{this.name}}: ${{price}}</li>
+            {{/each}}
+        </ul>
+    {{else}}
+        <h3>No tiene permiso para ver la comida</h3>
+    {{/if}}
+</div>
+
+<script src="/js/user.js"></script>

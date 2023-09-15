@@ -1,0 +1,19 @@
+{{#if hasError}}
+    <p>{{ error }}</p>
+{{/if}}
+
+<h3>Inicia sesión o <a href="/register">regístrate</a></h3>
+
+<form action="/api/sessions/login" method="POST">
+    Email: <input type="text" name="email"><br><br>
+    Contraseña: <input type="password" name="password"><br><br>
+    
+    <input type="submit" value="Iniciar sesión">
+
+</form>
+
+<a href="/recovery-password">Olvide mi contraseña</a>
+
+<h3>o inicia sesión con:</h3>
+
+<a href="/api/sessions/github">Entrar con GitHub</a>

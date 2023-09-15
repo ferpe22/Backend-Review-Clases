@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Rocio",
+    "lastname": "Ponce",
+    "username": "ro_ponce",
+    "password": "bauti2023",
+    "id": 1
+  },
+  {
+    "name": "Fernando",
+    "lastname": "Pereira",
+    "username": "ferpe22",
+    "password": "ferchu22",
+    "id": 2
+  }
+]
