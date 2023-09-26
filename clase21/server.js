@@ -10,8 +10,8 @@ const InitializePassport = require('./config/passport.config')
 const viewsRouter = require('./routers/viewsRouter')
 const sessionRouter = require('./routers/sessionRouter')
 
-const MONGODB_CONNCECT = 'mongodb+srv://ferpereira22:franco15@cluster0.1l8kmh9.mongodb.net/clase21?retryWrites=true&w=majority'
-mongoose.connect(MONGODB_CONNCECT)
+const MONGODB_CONNECT = 'mongodb+srv://ferpereira22:franco15@cluster0.1l8kmh9.mongodb.net/clase21?retryWrites=true&w=majority'
+mongoose.connect(MONGODB_CONNECT)
     .then(async => {
         console.log('conectado a la base de datos')
     })

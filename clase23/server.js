@@ -1,6 +1,9 @@
 const express = require('express')
 const dictionaryRouter = require('./routers/dictionaryRouter')
 const petsRouter = require('./routers/petRouter')
+const UserRouter = require('./routers/userRouter')
+
+const userRouter = new UserRouter()
 
 const app = express()
 
@@ -16,6 +19,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/dictionary', dictionaryRouter)
 app.use('/api/pets', petsRouter)
+app.use('/api/users', userRouter.getRouter())
 
 const PORT = 8080
 

@@ -1,0 +1,28 @@
+<form id="productForm">
+  <label for="name">Nombre: <input id="nameInput" type="text" name="title"></label><br><br>
+  <label for="name">Código: <input id="codeInput" type="text" name="code"></label><br><br>
+  <label for="name">Stock: <input id="stockInput" type="text" name="stock"></label><br><br>
+  <label for="price">Precio: <input id="priceInput" type="text" name="price"></label><br><br>
+  <input id="sendButton" type="submit" value="Enviar">
+</form>
+
+
+<table id="productos">
+    <tr>
+        <th>Nombre</th>
+        <th>Código</th>
+        <th>Precio</th>
+        <th>Borrar</th>
+    </tr>
+    {{#each products}}
+        <tr>
+            <td>{{this.title}}</td>
+            <td>{{this.code}}</td>
+            <td>{{this.price}}</td>
+            <td><button class="deleteButton" id="deleteButton_{{this._id}}" onclick="deleteProduct('{{this._id}}')">Borrar</button></td>
+        </tr>
+    {{/each}}
+</table>
+
+{{!-- <script src="/socket.io/socket.io.js"></script> --}}
+<script src="../../public/js/products.js"></script>
