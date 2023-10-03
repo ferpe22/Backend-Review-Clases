@@ -1,5 +1,6 @@
 const express = require('express')
 const toyRouter = require('./routers/toysRouter')
+const userRouter = require('./routers/usersRouter')
 
 const app = express()
 
@@ -15,6 +16,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/toys', toyRouter)
+app.use('/api/users', userRouter)
 
 const PORT = 8080
 

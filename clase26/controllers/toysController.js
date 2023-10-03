@@ -1,4 +1,3 @@
-
 const ToyService = require('../services/toysService')
 
 class ToysController {
