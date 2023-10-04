@@ -1,6 +1,8 @@
+const users = []
+
 class UsersMemory {
     constructor () {
-      this.users = []
+      this.users = users
     }
   
     getAll () {
