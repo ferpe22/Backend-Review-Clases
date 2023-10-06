@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const { Command } = require('commander')
 const dotenv = require('dotenv')
 const config = require('./utils/config')
@@ -25,6 +26,8 @@ const dbConnection = DB.getConnection(settings)
 const toysRouter = require('./routers/toysRouter')
 
 const app = express()
+
+app.use(cors())
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
